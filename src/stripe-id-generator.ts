@@ -4,7 +4,7 @@ import * as crypto from 'crypto'
 const ALPHA_NUM = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 export default class IdGenerator {
-  private prefixes: string[]
+  private readonly prefixes: string[]
   constructor(prefixes?: string | string[]) {
     if (Array.isArray(prefixes)) {
       this.prefixes = prefixes
