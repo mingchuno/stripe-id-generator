@@ -1,4 +1,4 @@
-import DummyClass from '../src/strip-id-generator'
+import DummyClass from '../src/stripe-id-generator'
 
 /**
  * Dummy test

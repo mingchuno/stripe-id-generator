@@ -1,11 +1,11 @@
 {
-  "name": "strip-id-generator",
+  "name": "stripe-id-generator",
   "version": "0.0.1",
   "description": "",
   "keywords": [],
-  "main": "dist/strip-id-generator.umd.js",
-  "module": "dist/strip-id-generator.es5.js",
-  "typings": "dist/types/strip-id-generator.d.ts",
+  "main": "dist/stripe-id-generator.umd.js",
+  "module": "dist/stripe-id-generator.es5.js",
+  "typings": "dist/types/stripe-id-generator.d.ts",
   "files": [
     "dist"
   ],
