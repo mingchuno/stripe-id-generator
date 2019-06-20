@@ -31,7 +31,7 @@ export default class IdGenerator {
 
   public new(prefix?: string) {
     if (!prefix) {
-      if (this.prefixes.length !== 1) {
+      if (this.prefixes.length === 0) {
         throw new Error('missing prefix for id')
       }
       prefix = this.prefixes[0]

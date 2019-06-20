@@ -47,6 +47,12 @@ describe('with accepted prefix list', () => {
       idGenerator.new('cli')
     }).toThrow(/invalid prefix cli, valid: cus,con/)
   })
+
+  it('should use the first prefix as default', () => {
+    const id = idGenerator.new()
+    expect(id).toHaveLength(20)
+    expect(id).toMatch(/^cus_[a-zA-Z0-9]{16}$/)
+  })
 })
 
 describe('with one accepted prefix', () => {
