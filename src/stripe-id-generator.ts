@@ -17,7 +17,7 @@ export default class IdGenerator {
     this.prefixes = []
   }
 
-  public newUid = function(len: number) {
+  public newUid(len: number) {
     const rnd = crypto.randomBytes(len)
     const value = new Array(len)
     const charsLength = ALPHA_NUM.length
