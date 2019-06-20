@@ -823,7 +823,7 @@
     pirates "^4.0.1"
     realpath-native "^1.1.0"
     rimraf "^2.5.4"
-    stripe-ansi "^5.0.0"
+    strip-ansi "^5.0.0"
 
 "@jest/environment@^24.8.0":
   version "24.8.0"
@@ -1928,7 +1928,7 @@ chalk@^1.0.0, chalk@^1.1.3:
     ansi-styles "^2.2.1"
     escape-string-regexp "^1.0.2"
     has-ansi "^2.0.0"
-    stripe-ansi "^3.0.0"
+    strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
 chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.3.1, chalk@^2.3.2, chalk@^2.4.1, chalk@^2.4.2:
@@ -1993,7 +1993,7 @@ cli-columns@^3.1.2:
   integrity sha1-ZzLZcpee/CrkRKHwjgj6E5yWoY4=
   dependencies:
     string-width "^2.0.0"
-    stripe-ansi "^3.0.1"
+    strip-ansi "^3.0.1"
 
 cli-cursor@^2.0.0, cli-cursor@^2.1.0:
   version "2.1.0"
@@ -2038,7 +2038,7 @@ cliui@^4.0.0:
   integrity sha512-4FG+RSG9DL7uEwRUZXZn3SS34DiDPfzP0VOiEwtUWlE+AR2EIg+hSyvrIgUUfhdgR/UkAeW2QHgeP+hWrXs7jQ==
   dependencies:
     string-width "^2.1.1"
-    stripe-ansi "^4.0.0"
+    strip-ansi "^4.0.0"
     wrap-ansi "^2.0.0"
 
 cliui@^5.0.0:
@@ -2047,7 +2047,7 @@ cliui@^5.0.0:
   integrity sha512-PYeGSEmmHM6zvoef2w8TPzlrnNpXIjTipYK780YswmIP9vjxmd6Y2a3CB2Ks6/AU8NHjZugXvo8w3oWM2qnwXA==
   dependencies:
     string-width "^3.1.0"
-    stripe-ansi "^5.2.0"
+    strip-ansi "^5.2.0"
     wrap-ansi "^5.1.0"
 
 clone-response@^1.0.2:
@@ -2115,7 +2115,7 @@ columnify@~1.5.4:
   resolved "https://registry.yarnpkg.com/columnify/-/columnify-1.5.4.tgz#4737ddf1c7b69a8a7c340570782e947eec8e78bb"
   integrity sha1-Rzfd8ce2mop8NAVweC6UfuyOeLs=
   dependencies:
-    stripe-ansi "^3.0.0"
+    strip-ansi "^3.0.0"
     wcwidth "^1.0.0"
 
 combined-stream@^1.0.6, combined-stream@~1.0.6:
@@ -2148,8 +2148,8 @@ commitizen@^3.0.0:
     lodash "4.17.11"
     minimist "1.2.0"
     shelljs "0.7.6"
-    stripe-bom "3.0.0"
-    stripe-json-comments "2.0.1"
+    strip-bom "3.0.0"
+    strip-json-comments "2.0.1"
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -2890,7 +2890,7 @@ execa@^0.7.0:
     npm-run-path "^2.0.0"
     p-finally "^1.0.0"
     signal-exit "^3.0.0"
-    stripe-eof "^1.0.0"
+    strip-eof "^1.0.0"
 
 execa@^1.0.0:
   version "1.0.0"
@@ -2903,7 +2903,7 @@ execa@^1.0.0:
     npm-run-path "^2.0.0"
     p-finally "^1.0.0"
     signal-exit "^3.0.0"
-    stripe-eof "^1.0.0"
+    strip-eof "^1.0.0"
 
 exit@^0.1.2:
   version "0.1.2"
@@ -3285,7 +3285,7 @@ gauge@~2.7.3:
     object-assign "^4.1.0"
     signal-exit "^3.0.0"
     string-width "^1.0.1"
-    stripe-ansi "^3.0.1"
+    strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
 genfun@^5.0.0:
@@ -3828,7 +3828,7 @@ inquirer@6.2.0:
     run-async "^2.2.0"
     rxjs "^6.1.0"
     string-width "^2.1.0"
-    stripe-ansi "^4.0.0"
+    strip-ansi "^4.0.0"
     through "^2.3.6"
 
 interpret@^1.0.0:
@@ -4529,7 +4529,7 @@ jest-runtime@^24.8.0:
     jest-validate "^24.8.0"
     realpath-native "^1.1.0"
     slash "^2.0.0"
-    stripe-bom "^3.0.0"
+    strip-bom "^3.0.0"
     yargs "^12.0.2"
 
 jest-serializer@^24.4.0:
@@ -4999,7 +4999,7 @@ listr-update-renderer@^0.5.0:
     indent-string "^3.0.0"
     log-symbols "^1.0.2"
     log-update "^2.3.0"
-    stripe-ansi "^3.0.1"
+    strip-ansi "^3.0.1"
 
 listr-verbose-renderer@^0.5.0:
   version "0.5.0"
@@ -5034,7 +5034,7 @@ load-json-file@^4.0.0:
     graceful-fs "^4.1.2"
     parse-json "^4.0.0"
     pify "^3.0.0"
-    stripe-bom "^3.0.0"
+    strip-bom "^3.0.0"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -6723,9 +6723,9 @@ qs@~6.5.2:
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
 query-string@^6.2.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.7.0.tgz#7e92bf8525140cf8c5ebf500f26716b0de5b7023"
-  integrity sha512-oQ01H1jrgDRbPq5SjtJF470S418GOrKkds+fpvAt6DQatHXl7bmkaJulHbTIM+QNGtoPpa8f5k9W3Zk50zXRPQ==
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.8.0.tgz#08be5c20ea6657150bacaa6bd9829cfa8e546dc2"
+  integrity sha512-CVpZPN0xDUfmoT7qlDbbx/2jNjk43LW3Ayjy7E2BjOQNlL8L/hqhihUpv/XPu/w3H/LBjlZ7OXP8x/QEnuxTtA==
   dependencies:
     decode-uri-component "^0.2.0"
     split-on-first "^1.0.0"
@@ -6749,7 +6749,7 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7, rc@^1.2.8:
     deep-extend "^0.6.0"
     ini "~1.3.0"
     minimist "^1.2.0"
-    stripe-json-comments "~2.0.1"
+    strip-json-comments "~2.0.1"
 
 react-is@^16.8.4:
   version "16.8.6"
@@ -6913,7 +6913,7 @@ redent@^2.0.0:
   integrity sha1-wbIAe0LVfrE4kHmzyDM2OdXhzKo=
   dependencies:
     indent-string "^3.0.0"
-    stripe-indent "^2.0.0"
+    strip-indent "^2.0.0"
 
 redeyed@~2.1.0:
   version "2.1.1"
@@ -7791,7 +7791,7 @@ string-length@^2.0.0:
   integrity sha1-1A27aGo6zpYMHP/KVivyxF+DY+0=
   dependencies:
     astral-regex "^1.0.0"
-    stripe-ansi "^4.0.0"
+    strip-ansi "^4.0.0"
 
 string-width@^1.0.1:
   version "1.0.2"
@@ -7800,7 +7800,7 @@ string-width@^1.0.1:
   dependencies:
     code-point-at "^1.0.0"
     is-fullwidth-code-point "^1.0.0"
-    stripe-ansi "^3.0.0"
+    strip-ansi "^3.0.0"
 
 "string-width@^1.0.2 || 2", string-width@^2.0.0, string-width@^2.1.0, string-width@^2.1.1:
   version "2.1.1"
@@ -7808,7 +7808,7 @@ string-width@^1.0.1:
   integrity sha512-nOqH59deCq9SRHlxq1Aw85Jnt4w6KvLKqWVik6oA9ZklXLNIOlqg4F2yrT1MVaTjAqvVwdfeZ7w7aCvJD7ugkw==
   dependencies:
     is-fullwidth-code-point "^2.0.0"
-    stripe-ansi "^4.0.0"
+    strip-ansi "^4.0.0"
 
 string-width@^3.0.0, string-width@^3.1.0:
   version "3.1.0"
@@ -7817,7 +7817,7 @@ string-width@^3.0.0, string-width@^3.1.0:
   dependencies:
     emoji-regex "^7.0.1"
     is-fullwidth-code-point "^2.0.0"
-    stripe-ansi "^5.1.0"
+    strip-ansi "^5.1.0"
 
 string_decoder@^1.1.1:
   version "1.2.0"
@@ -7852,45 +7852,45 @@ stringify-package@^1.0.0:
   resolved "https://registry.yarnpkg.com/stringify-package/-/stringify-package-1.0.0.tgz#e02828089333d7d45cd8c287c30aa9a13375081b"
   integrity sha512-JIQqiWmLiEozOC0b0BtxZ/AOUtdUZHCBPgqIZ2kSJJqGwgb9neo44XdTHUC4HZSGqi03hOeB7W/E8rAlKnGe9g==
 
-stripe-ansi@^3.0.0, stripe-ansi@^3.0.1:
+strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   version "3.0.1"
-  resolved "https://registry.yarnpkg.com/stripe-ansi/-/stripe-ansi-3.0.1.tgz#6a385fb8853d952d5ff05d0e8aaf94278dc63dcf"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-3.0.1.tgz#6a385fb8853d952d5ff05d0e8aaf94278dc63dcf"
   integrity sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=
   dependencies:
     ansi-regex "^2.0.0"
 
-stripe-ansi@^4.0.0:
+strip-ansi@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/stripe-ansi/-/stripe-ansi-4.0.0.tgz#a8479022eb1ac368a871389b635262c505ee368f"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-4.0.0.tgz#a8479022eb1ac368a871389b635262c505ee368f"
   integrity sha1-qEeQIusaw2iocTibY1JixQXuNo8=
   dependencies:
     ansi-regex "^3.0.0"
 
-stripe-ansi@^5.0.0, stripe-ansi@^5.1.0, stripe-ansi@^5.2.0:
+strip-ansi@^5.0.0, strip-ansi@^5.1.0, strip-ansi@^5.2.0:
   version "5.2.0"
-  resolved "https://registry.yarnpkg.com/stripe-ansi/-/stripe-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
   integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
   dependencies:
     ansi-regex "^4.1.0"
 
-stripe-bom@3.0.0, stripe-bom@^3.0.0:
+strip-bom@3.0.0, strip-bom@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/stripe-bom/-/stripe-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
+  resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
   integrity sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM=
 
-stripe-eof@^1.0.0:
+strip-eof@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/stripe-eof/-/stripe-eof-1.0.0.tgz#bb43ff5598a6eb05d89b59fcd129c983313606bf"
+  resolved "https://registry.yarnpkg.com/strip-eof/-/strip-eof-1.0.0.tgz#bb43ff5598a6eb05d89b59fcd129c983313606bf"
   integrity sha1-u0P/VZim6wXYm1n80SnJgzE2Br8=
 
-stripe-indent@^2.0.0:
+strip-indent@^2.0.0:
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/stripe-indent/-/stripe-indent-2.0.0.tgz#5ef8db295d01e6ed6cbf7aab96998d7822527b68"
+  resolved "https://registry.yarnpkg.com/strip-indent/-/strip-indent-2.0.0.tgz#5ef8db295d01e6ed6cbf7aab96998d7822527b68"
   integrity sha1-XvjbKV0B5u1sv3qrlpmNeCJSe2g=
 
-stripe-json-comments@2.0.1, stripe-json-comments@~2.0.1:
+strip-json-comments@2.0.1, strip-json-comments@~2.0.1:
   version "2.0.1"
-  resolved "https://registry.yarnpkg.com/stripe-json-comments/-/stripe-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
+  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
 supports-color@^2.0.0:
@@ -8640,7 +8640,7 @@ wrap-ansi@^2.0.0:
   integrity sha1-2Pw9KE3QV5T+hJc8rs3Rz4JP3YU=
   dependencies:
     string-width "^1.0.1"
-    stripe-ansi "^3.0.1"
+    strip-ansi "^3.0.1"
 
 wrap-ansi@^3.0.1:
   version "3.0.1"
@@ -8648,7 +8648,7 @@ wrap-ansi@^3.0.1:
   integrity sha1-KIoE2H7aXChuBg3+jxNc6NAH+Lo=
   dependencies:
     string-width "^2.1.1"
-    stripe-ansi "^4.0.0"
+    strip-ansi "^4.0.0"
 
 wrap-ansi@^5.1.0:
   version "5.1.0"
@@ -8657,7 +8657,7 @@ wrap-ansi@^5.1.0:
   dependencies:
     ansi-styles "^3.2.0"
     string-width "^3.0.0"
-    stripe-ansi "^5.0.0"
+    strip-ansi "^5.0.0"
 
 wrappy@1:
   version "1.0.2"
