@@ -11,14 +11,16 @@ node_js:
 jobs:
   include:
     - stage: test
-      script: yarn test:prod && yarn build
-    - stage: deploy
-      node_js:
-        - 10
       script:
-        - yarn build && yarn report-coverage
-        - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then yarn deploy-docs; fi
-        - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then yarn semantic-release; fi
+        - yarn test:prod && yarn report-coverage
+        - yarn build
+    # - stage: deploy
+    #   node_js:
+    #     - 10
+    #   script:
+    #     - yarn build
+    #     - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then yarn deploy-docs; fi
+    #     - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then yarn semantic-release; fi
 
 branches:
   except:
