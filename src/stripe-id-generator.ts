@@ -1,4 +1,5 @@
-import crypto from 'crypto'
+// import crypto from 'crypto' NOT working in test case!
+import * as crypto from 'crypto'
 
 const ALPHA_NUM = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
@@ -7,9 +8,11 @@ export default class IdGenerator {
   constructor(prefixes?: string | string[]) {
     if (Array.isArray(prefixes)) {
       this.prefixes = prefixes
+      return
     }
     if (typeof prefixes === 'string') {
       this.prefixes = [prefixes]
+      return
     }
     this.prefixes = []
   }
