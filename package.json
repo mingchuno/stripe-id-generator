@@ -1,6 +1,6 @@
 {
   "name": "stripe-id-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "keywords": [],
   "main": "dist/stripe-id-generator.umd.js",
