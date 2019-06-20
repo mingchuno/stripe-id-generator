@@ -1,5 +1,8 @@
 # stripe-id-generator
 
+[![Travis](https://img.shields.io/travis/mingchuno/stripe-id-generator.svg)](https://travis-ci.org/mingchuno/stripe-id-generator)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
 Generates random ids with a prefix (a la Stripe)
 
 ## Installing
