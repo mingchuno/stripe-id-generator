@@ -1,7 +1,7 @@
 {
   "name": "stripe-id-generator",
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Generates random ids with a prefix (a la Stripe)",
   "keywords": [],
   "main": "dist/stripe-id-generator.umd.js",
   "module": "dist/stripe-id-generator.es5.js",
@@ -12,7 +12,7 @@
   "author": "mingchun.or <mingchuno@gmail.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/mingchuno/stripe-id-generator"
   },
   "license": "MIT",
   "engines": {
