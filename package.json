@@ -1,6 +1,6 @@
 {
   "name": "strip-id-generator",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "keywords": [],
   "main": "dist/strip-id-generator.umd.js",
