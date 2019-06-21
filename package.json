@@ -1,6 +1,6 @@
 {
   "name": "stripe-id-generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generates random ids with a prefix (a la Stripe)",
   "keywords": [],
   "main": "dist/stripe-id-generator.umd.js",
