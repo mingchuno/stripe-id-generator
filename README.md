@@ -1,6 +1,6 @@
 # stripe-id-generator
 
-[![Travis](https://img.shields.io/travis/mingchuno/stripe-id-generator.svg)](https://travis-ci.org/mingchuno/stripe-id-generator)
+[![Build Status](https://travis-ci.org/mingchuno/stripe-id-generator.svg?branch=master)](https://travis-ci.org/mingchuno/stripe-id-generator)
 [![Coverage Status](https://coveralls.io/repos/github/mingchuno/stripe-id-generator/badge.svg?branch=master)](https://coveralls.io/github/mingchuno/stripe-id-generator?branch=master)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
