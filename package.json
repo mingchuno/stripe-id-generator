@@ -91,7 +91,7 @@
     "@types/node": "12.12.12",
     "colors": "1.4.0",
     "commitizen": "3.1.2",
-    "coveralls": "3.0.8",
+    "coveralls": "3.0.9",
     "cz-conventional-changelog": "2.1.0",
     "husky": "3.1.0",
     "jest": "24.9.0",
