@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/mingchuno/stripe-id-generator/badge.svg?branch=master)](https://coveralls.io/github/mingchuno/stripe-id-generator?branch=master)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-Generates random ids with a prefix (a la Stripe)
+Generates random ids with a prefix (a la Stripe) for Node.Js
 
 ## Installing
 
