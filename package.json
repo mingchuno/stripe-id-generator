@@ -89,7 +89,7 @@
     "@types/jest": "28.1.6",
     "@types/node": "16.11.45",
     "colors": "1.4.0",
-    "commitizen": "4.2.4",
+    "commitizen": "4.2.5",
     "coveralls": "3.1.1",
     "cz-conventional-changelog": "3.3.0",
     "husky": "4.3.8",
