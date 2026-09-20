@@ -1,6 +1,6 @@
 {
   "name": "stripe-id-generator",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Generates random ids with a prefix (a la Stripe)",
   "author": "mingchun.or <mingchuno@gmail.com>",
   "repository": {
