@@ -36,6 +36,13 @@ generator.new('cli') // Throws: invalid prefix cli, valid: cus,con
 - `generator.new(prefix?)`: return the prefix, `_`, and 16 random alphanumeric characters. Defaults to the first allowed prefix; throws if none is available or the prefix is not allowed.
 - `generator.newUid(length)`: return an unprefixed alphanumeric UID of the given length. Zero returns an empty string.
 
+Prefixes must be nonempty strings containing only ASCII letters and digits
+(`A-Z`, `a-z`, `0-9`); invalid values throw `TypeError`. Omit the prefix or pass
+`undefined` to use the default; an empty string is rejected. The generator copies
+the allowed-prefix array, so later changes to that array do not affect it.
+
+UID characters are sampled uniformly using cryptographic random bytes.
+
 ## Author and license
 
 Forked from [Auth0](https://github.com/auth0/id-generator). Licensed under [MIT](LICENSE).
