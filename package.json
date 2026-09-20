@@ -2,120 +2,56 @@
   "name": "stripe-id-generator",
   "version": "0.1.1",
   "description": "Generates random ids with a prefix (a la Stripe)",
-  "keywords": [],
-  "main": "dist/stripe-id-generator.umd.js",
-  "module": "dist/stripe-id-generator.es5.js",
-  "typings": "dist/types/stripe-id-generator.d.ts",
-  "files": [
-    "dist"
-  ],
   "author": "mingchun.or <mingchuno@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/mingchuno/stripe-id-generator"
   },
   "license": "MIT",
+  "keywords": [
+    "id",
+    "generator",
+    "prefix",
+    "stripe"
+  ],
+  "type": "commonjs",
+  "main": "./dist/stripe-id-generator.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/stripe-id-generator.d.cts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/stripe-id-generator.d.cts",
+        "default": "./dist/stripe-id-generator.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
   "engines": {
-    "node": ">=12.0.0"
+    "node": "^22.0.0 || ^24.0.0 || >=26.0.0"
   },
   "scripts": {
-    "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
-    "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --theme minimal src",
-    "start": "rollup -c rollup.config.ts -w",
-    "test": "jest --coverage",
-    "test:watch": "jest --coverage --watch",
-    "test:prod": "npm run lint && npm run test -- --no-cache",
-    "deploy-docs": "ts-node tools/gh-pages-publish",
-    "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "commit": "git-cz",
-    "semantic-release": "semantic-release",
-    "semantic-release-prepare": "ts-node tools/semantic-release-prepare"
-  },
-  "lint-staged": {
-    "{src,test}/**/*.ts": [
-      "tslint --fix"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node",
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/test/"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 90,
-        "functions": 95,
-        "lines": 95,
-        "statements": 95
-      }
-    },
-    "collectCoverageFrom": [
-      "src/**/*.{js,ts}"
-    ]
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
+    "clean": "node --input-type=module -e \"import { rmSync } from 'node:fs'; rmSync('dist', { recursive: true, force: true })\"",
+    "build": "npm run clean && tsc",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "typecheck": "tsc --noEmit && tsc -p test/types/tsconfig.json",
+    "test": "npm run build && node --test --experimental-test-coverage --test-coverage-include=dist/*.cjs --test-coverage-lines=95 --test-coverage-functions=95 --test-coverage-branches=90 test/*.test.mjs",
+    "test:package": "node tools/test-package.mjs",
+    "check": "npm run lint && npm test && npm run typecheck && npm run test:package",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run check"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.3.0",
-    "@commitlint/config-conventional": "16.2.4",
-    "@types/jest": "28.1.8",
-    "@types/node": "16.18.76",
-    "colors": "1.4.0",
-    "commitizen": "4.3.0",
-    "coveralls": "3.1.1",
-    "cz-conventional-changelog": "3.3.0",
-    "husky": "4.3.8",
-    "jest": "28.1.3",
-    "jest-config": "28.1.3",
-    "lint-staged": "10.5.4",
-    "lodash.camelcase": "4.3.0",
-    "prettier": "2.8.8",
-    "prompt": "1.3.0",
-    "replace-in-file": "6.3.5",
-    "rimraf": "3.0.2",
-    "rollup": "2.79.2",
-    "rollup-plugin-commonjs": "10.1.0",
-    "rollup-plugin-json": "4.0.0",
-    "rollup-plugin-node-resolve": "5.2.0",
-    "rollup-plugin-sourcemaps": "0.6.3",
-    "rollup-plugin-typescript2": "0.36.0",
-    "semantic-release": "17.4.7",
-    "shelljs": "0.8.5",
-    "ts-jest": "28.0.8",
-    "ts-node": "10.9.2",
-    "tslint": "6.1.3",
-    "tslint-config-prettier": "1.18.0",
-    "tslint-config-standard": "9.0.0",
-    "tslint-plugin-prettier": "2.3.0",
-    "typedoc": "0.20.36",
-    "typescript": "4.2.4"
+    "@biomejs/biome": "2.5.14",
+    "@types/node": "22.20.4",
+    "typescript": "7.0.2"
   }
 }

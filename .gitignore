@@ -1,11 +1,8 @@
-node_modules
-coverage
-.nyc_output
+node_modules/
+dist/
+coverage/
+*.tgz
 .DS_Store
 *.log
-.idea
-dist
-compiled
-.awcache
-.rpt2_cache
-docs
+.idea/
+docs/

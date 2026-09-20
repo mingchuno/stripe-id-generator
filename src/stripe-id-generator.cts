@@ -1,9 +1,9 @@
-// import crypto from 'crypto' NOT working in test case!
-import * as crypto from 'crypto'
+import { randomBytes } from 'node:crypto'
 
-const ALPHA_NUM = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+const ALPHA_NUM =
+  '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-export default class IdGenerator {
+class IdGenerator {
   private readonly prefixes: string[]
   constructor(prefixes?: string | string[]) {
     if (Array.isArray(prefixes)) {
@@ -18,7 +18,7 @@ export default class IdGenerator {
   }
 
   public newUid(len: number) {
-    const rnd = crypto.randomBytes(len)
+    const rnd = randomBytes(len)
     const value = new Array(len)
     const charsLength = ALPHA_NUM.length
 
@@ -37,10 +37,12 @@ export default class IdGenerator {
       prefix = this.prefixes[0]
     }
 
-    if (this.prefixes.length && !~this.prefixes.indexOf(prefix)) {
-      throw new Error('invalid prefix ' + prefix + ', valid: ' + this.prefixes)
+    if (this.prefixes.length && !this.prefixes.includes(prefix)) {
+      throw new Error(`invalid prefix ${prefix}, valid: ${this.prefixes}`)
     }
 
-    return prefix + '_' + this.newUid(16)
+    return `${prefix}_${this.newUid(16)}`
   }
 }
+
+export = IdGenerator

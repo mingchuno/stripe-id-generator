@@ -1,10 +1,10 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "schedule": "every weekend",
-  "automerge": true,
-  "major": {
-    "automerge": false
-  },
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", "helpers:pinGitHubActionDigests"],
+  "schedule": ["every weekend"],
+  "rangeStrategy": "pin",
+  "packageRules": [
+    { "matchUpdateTypes": ["minor", "patch", "digest"], "automerge": true },
+    { "matchPackageNames": ["@types/node"], "allowedVersions": "<23" }
+  ]
 }
